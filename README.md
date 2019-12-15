@@ -1,24 +1,26 @@
-# rpf_clotheshop
+# REDM CLOTHE SHOP FOR REDEMRP 1.0 WIP
 
-RedM Script
+I made this menu to allow you to buy your outfits and change characters or create with [REDEMRP](https://github.com/RedEM-RP/redemrp_skin). 
 
-RPF STUDIO 1.0 CLOTHESHOP
+1 - You can buy them on the city of Valentine in the shop, an icon is placed on the map .
 
------------------------------------
+2 - You can create your character online or have another character from the games which can also be modified in this same store.
 
-Simple clothe shop for any NPC you whant - YOU CAN HAVE 100+ POSSIBILITY
-
-Need for work 100%
-
-https://github.com/RedEM-RP/redem_roleplay  -- for money work OK
-
-https://github.com/RedEM-RP/redemrp_skin  -- for create the body and head of your skin WIP  
+3 - resource function with [REDEM_ROLEPLAY](https://github.com/RedEM-RP/redem_roleplay) whom you withdraw the money when you buy an outfit
 
 But this script can work withou...
 
+More info and Im Frensh if you dont speack English
+
+The tra
+
 Todo :
 
--- Save in db
--- add female mp
--- multiple magisin
+-- translation is in progress
+-- Save in skin db the clothe
+-- add female mp 
+-- multiple magisin 
 -- added all blip
+
+![0_20191213142917_1|666x500](upload://22OQcaoBni5AA6OqztHS2c6bFwO.png)
+![0_20191215163328_1|666x500](upload://pusmvvCwgksQIkpoGCrgz4m7jbn.jpeg)
