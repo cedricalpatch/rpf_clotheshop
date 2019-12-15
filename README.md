@@ -1,5 +1,7 @@
 # rpf_clotheshop
 
+RedM Script
+
 RPF STUDIO 1.0 CLOTHESHOP
 
 -----------------------------------
@@ -18,4 +20,7 @@ More info and Im Frensh if you dont speack English
 
 https://discord.gg/aX5th2U
 
-RedM Script
+Todo :
+
+-- Save in db
+-- add female mp
