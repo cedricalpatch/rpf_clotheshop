@@ -116,8 +116,6 @@ Citizen.CreateThread(function()
                 TriggerServerEvent("buy:clothe", 4, 36) 
             elseif WarMenu.Button('Cowboy Bordeau 4 $') then
                 TriggerServerEvent("buy:clothe", 4, 35) 
-            --elseif WarMenu.Button('Cowboy Bordeau 4 $') then -- for add clothe -- ajouter tenue 90 +
-                --TriggerServerEvent("buy:clothe", 4, 35) 
             end
 
             WarMenu.Display()
@@ -125,10 +123,6 @@ Citizen.CreateThread(function()
         elseif WarMenu.IsMenuOpened('tail2') then   
             if WarMenu.Button('Creer le votre') then
                TriggerEvent('redemrp_skin:openCreator')
-            --elseif WarMenu.Button('Perso online') then
-                 --SetPlayerModel(ped, `mp_male`, true)
-            --elseif WarMenu.Button('Perso Arthur') then
-                 --SetPlayerModel(ped, `player_zero`, true) -- if you dont have redemrp_skin - si tu as pas redemrp_skin
             end
 
             WarMenu.Display()
@@ -136,8 +130,6 @@ Citizen.CreateThread(function()
         elseif WarMenu.IsMenuOpened('tail3') then   
             if WarMenu.Button('Peso online') then
                SetPlayerModel(ped, `mp_male`, true)
-            --elseif WarMenu.Button('Perso Arthur') then
-                 --SetPlayerModel(ped, `player_zero`, true) -- if you dont have redemrp_skin - si tu as pas redemrp_skin
             end
 
             WarMenu.Display()
