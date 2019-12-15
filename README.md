@@ -24,3 +24,5 @@ Todo :
 
 -- Save in db
 -- add female mp
+-- multiple magisin
+-- added all blip
