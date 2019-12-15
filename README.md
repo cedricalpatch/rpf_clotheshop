@@ -22,5 +22,4 @@ Todo :
 -- multiple magisin 
 -- added all blip
 
-(upload://22OQcaoBni5AA6OqztHS2c6bFwO.png)
-(upload://pusmvvCwgksQIkpoGCrgz4m7jbn.jpeg)
+https://forum.fivem.net/uploads/default/original/4X/b/2/a/b2a7bc7c08f9540254cb8786574a148b2f90ed75.jpeg
