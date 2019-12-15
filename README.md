@@ -16,10 +16,6 @@ https://github.com/RedEM-RP/redemrp_skin  -- for create the body and head of you
 
 But this script can work withou...
 
-More info and Im Frensh if you dont speack English
-
-https://discord.gg/aX5th2U
-
 Todo :
 
 -- Save in db
