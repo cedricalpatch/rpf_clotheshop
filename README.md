@@ -22,5 +22,5 @@ Todo :
 -- multiple magisin 
 -- added all blip
 
-![0_20191213142917_1|666x500](upload://22OQcaoBni5AA6OqztHS2c6bFwO.png)
-![0_20191215163328_1|666x500](upload://pusmvvCwgksQIkpoGCrgz4m7jbn.jpeg)
+(upload://22OQcaoBni5AA6OqztHS2c6bFwO.png)
+(upload://pusmvvCwgksQIkpoGCrgz4m7jbn.jpeg)
