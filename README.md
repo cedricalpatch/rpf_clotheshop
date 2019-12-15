@@ -22,4 +22,10 @@ Todo :
 -- multiple magisin 
 -- added all blip
 
+carte - map :
+
 https://forum.fivem.net/uploads/default/original/4X/b/2/a/b2a7bc7c08f9540254cb8786574a148b2f90ed75.jpeg
+
+menu :
+
+https://forum.fivem.net/uploads/default/original/4X/0/e/5/0e55f46d22133e19a27b6abd397e1fac3c4ca19e.png
