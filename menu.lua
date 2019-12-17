@@ -136,18 +136,18 @@ Citizen.CreateThread(function()
 
         elseif (Vdist(coords.x, coords.y, coords.z, -322.25, 803.97, 116.95) < 1.0) then
                TriggerEvent("enter:clothe")
-               if IsControlJustReleased(0, 0xC7B5340A) then
+               if whenKeyJustPressed(keys["ENTER"]) then
                 WarMenu.OpenMenu('tenu')
                end
             --WarMenu.OpenMenu('tenu')
             WarMenu.Display()
         elseif (Vdist(coords.x, coords.y, coords.z, 1225.60, -1293.85, 76.90) < 1.0) then --added new shop
-                if IsControlJustReleased(0, 0xC7B5340A) then
+                if whenKeyJustPressed(keys["ENTER"]) then
                 WarMenu.OpenMenu('tenu')
                end
             WarMenu.Display()
         elseif (Vdist(coords.x, coords.y, coords.z, -248.717, 764.2324, 117.3572) < 1.0) then --added new shop
-                if IsControlJustReleased(0, 0xC7B5340A) then
+                if whenKeyJustPressed(keys["ENTER"]) then
                 WarMenu.OpenMenu('tenu')
                end
         end
@@ -187,6 +187,15 @@ AddEventHandler('loadtenue', function(kek)
     SetPedOutfitPreset(PlayerPedId(), kek) 
     ---TriggerServerEvent("redemrp_skin:createSkin", kek) -- save on db work
 end)
+------ key fonction
+
+function whenKeyJustPressed(key)
+    if Citizen.InvokeNative(0x580417101DDB492F, 0, key) then
+        return true
+    else
+        return false
+    end
+end
 
 ---- spawn npc
 
