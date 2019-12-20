@@ -1,9 +1,9 @@
-
 -- blips on the map
 -- blip sur la carte
 
 local blips = {
    {title="valentine", id=1687768444, x=-322.25, y=803.97, z=116.95},
+   {title="rhodes", id=1687768444, x=1225.60, y=-1293.85, z=76.90},
 }
 
 Citizen.CreateThread(function()
@@ -17,11 +17,11 @@ end)
 
 Citizen.CreateThread(function()
     local checkbox2 = false
-    WarMenu.CreateMenu('tenu', "Vetements")
-    WarMenu.SetSubTitle('tenu', 'Acheter une Tenue')
-    WarMenu.CreateSubMenu('tail', 'tenu', 'Tenue disponible')
-    WarMenu.CreateSubMenu('tail2', 'tenu', 'Aller dans la creation')
-     WarMenu.CreateSubMenu('tail3', 'tenu', 'Perso online de base')
+    WarMenu.CreateMenu('tenu', "Tailor")
+    WarMenu.SetSubTitle('tenu', 'Purchase an Outfit')
+    WarMenu.CreateSubMenu('tail', 'tenu', 'Complete Outfits')
+    WarMenu.CreateSubMenu('tail2', 'tenu', 'Creation Menu')
+     WarMenu.CreateSubMenu('tail3', 'tenu', 'Reset Character Model')
 
 
     while true do
@@ -33,68 +33,68 @@ Citizen.CreateThread(function()
 
         if WarMenu.IsMenuOpened('tenu') then
 
-            if WarMenu.MenuButton('Perso de base', 'tail3') then 
+            if WarMenu.MenuButton('Reset Character Model', 'tail3') then 
             end
 
-            if WarMenu.MenuButton('Creation Perso', 'tail2') then 
+            if WarMenu.MenuButton('Creation Menuu', 'tail2') then 
             end
 
-            if WarMenu.MenuButton('Tenue complet', 'tail') then
+            if WarMenu.MenuButton('Complete Outfits', 'tail') then
             end
 
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened('tail') then
-            if WarMenu.Button('Cowboy Barbe 1 $') then
+            if WarMenu.Button('Cowboy with Beard 1 $') then
                 TriggerServerEvent("buy:clothe", 1, 30) 
-            elseif WarMenu.Button('Foue blinder 2 $') then
+            elseif WarMenu.Button('Crazy Armour 2 $') then
                 TriggerServerEvent("buy:clothe", 2, 1) 
-            elseif WarMenu.Button('Fermier 1.5 $') then
+            elseif WarMenu.Button('Farmer 1.5 $') then
                 TriggerServerEvent("buy:clothe", 1.5, 2) 
-            elseif WarMenu.Button('Cowboy en cuir Mexique 1.4 $') then
+            elseif WarMenu.Button('Cowboy in Leather (Mexican) 1.4 $') then
                 TriggerServerEvent("buy:clothe", 1.4, 4) 
-            elseif WarMenu.Button('Cowboy en cuir USA 0.5 $') then
+            elseif WarMenu.Button('Cowboy in Leather (USA) 0.5 $') then
                 TriggerServerEvent("buy:clothe", 0.5, 5) 
-            elseif WarMenu.Button('Cowboy Echarpe 0.5 $') then
+            elseif WarMenu.Button('Cowboy with Scarf 0.5 $') then
                 TriggerServerEvent("buy:clothe", 0.5, 6) 
-            elseif WarMenu.Button('CowBoy cape 1 $') then
+            elseif WarMenu.Button('Cowboy with a cape 1 $') then
                 TriggerServerEvent("buy:clothe", 1, 7) 
-            elseif WarMenu.Button('Explorateur 0.2 $') then
+            elseif WarMenu.Button('Explorer 0.2 $') then
                 TriggerServerEvent("buy:clothe", 0.2, 8) 
-            elseif WarMenu.Button('Explorateur gilet 0.4 $') then
+            elseif WarMenu.Button('Explorer with Vest 0.4 $') then
                 TriggerServerEvent("buy:clothe", 0.4, 9) 
-            elseif WarMenu.Button('Chasseur 0.1') then
+            elseif WarMenu.Button('Hunter 0.1') then
                 TriggerServerEvent("buy:clothe", 0.1, 10) 
-            elseif WarMenu.Button('Chasseur barbe 3 $') then
+            elseif WarMenu.Button('Hunter with Beard 3 $') then
                 TriggerServerEvent("buy:clothe", 3, 11) 
-            elseif WarMenu.Button('Indien 0 $') then
+            elseif WarMenu.Button('Indian 0 $') then
                 TriggerServerEvent("buy:clothe", 0, 12) 
-            elseif WarMenu.Button('Indien frange $') then
+            elseif WarMenu.Button('Indian with Fringe $') then
                 TriggerServerEvent("buy:clothe", 0.6, 13) 
-            elseif WarMenu.Button('Braconnier 2 $') then
+            elseif WarMenu.Button('Poacher 2 $') then
                 TriggerServerEvent("buy:clothe", 2, 14) 
-            elseif WarMenu.Button('Braconnier class rich 5 $') then
+            elseif WarMenu.Button('Rich Poacher 15 $') then
                 TriggerServerEvent("buy:clothe", 5, 15) 
-            elseif WarMenu.Button('Cowboy blon 7 $') then
+            elseif WarMenu.Button('Cowboy - Blonde 7 $') then
                 TriggerServerEvent("buy:clothe", 7, 36) 
-            elseif WarMenu.Button('Cowboy favorie 0.6 $') then
+            elseif WarMenu.Button('Cowboy - Common 0.6 $') then
                 TriggerServerEvent("buy:clothe", 0.6, 37) 
-            elseif WarMenu.Button('Cowboy favorie classe 1 $') then
+            elseif WarMenu.Button('Cowboy - Common 2 1 $') then
                 TriggerServerEvent("buy:clothe", 1, 38) 
-            elseif WarMenu.Button('Manteau barde 3$') then
+            elseif WarMenu.Button('Bard Coat 3$') then
                 TriggerServerEvent("buy:clothe", 3, 19) 
-            elseif WarMenu.Button('Manteau moustache 2 $') then
+            elseif WarMenu.Button('Mustache and Coat 2 $') then
                 TriggerServerEvent("buy:clothe", 2, 20) 
-            elseif WarMenu.Button('Cowboy pauvre 0 $') then
+            elseif WarMenu.Button('Cowboy - Poor 0 $') then
                 TriggerServerEvent("buy:clothe", 0, 21) 
-            elseif WarMenu.Button('Costume veste 3.2 $') then
+            elseif WarMenu.Button('Suit 3.2 $') then
                 TriggerServerEvent("buy:clothe", 3.2, 22) 
             elseif WarMenu.Button('Bolero 3 $') then
                 TriggerServerEvent("buy:clothe", 3, 23) 
-            elseif WarMenu.Button('Cowboy Nice 4 $') then
+            elseif WarMenu.Button('Cowboy - Uncommon 4 $') then
                 TriggerServerEvent("buy:clothe", 4, 24) 
-            elseif WarMenu.Button('Cowboy Chaps 3.2 $') then
+            elseif WarMenu.Button('Cowboy with Chaps 3.2 $') then
                 TriggerServerEvent("buy:clothe", 3.2, 25) 
-            elseif WarMenu.Button('Cowboy 3 $') then
+            elseif WarMenu.Button('Cowboy - Common 3 3 $') then
                 TriggerServerEvent("buy:clothe", 3, 26) 
             elseif WarMenu.Button('Cowboy Bordeau 4 $') then
                 TriggerServerEvent("buy:clothe", 4, 27) 
@@ -121,7 +121,7 @@ Citizen.CreateThread(function()
             WarMenu.Display()
 
         elseif WarMenu.IsMenuOpened('tail2') then   
-            if WarMenu.Button('Creer le votre') then
+            if WarMenu.Button('Creation Menu') then
                TriggerEvent('redemrp_skin:openCreator')
             end
 
@@ -145,11 +145,6 @@ Citizen.CreateThread(function()
                 if whenKeyJustPressed(keys["ENTER"]) then
                 WarMenu.OpenMenu('tenu')
                end
-            WarMenu.Display()
-        elseif (Vdist(coords.x, coords.y, coords.z, -248.717, 764.2324, 117.3572) < 1.0) then --added new shop
-                if whenKeyJustPressed(keys["ENTER"]) then
-                WarMenu.OpenMenu('tenu')
-               end
         end
         Citizen.Wait(0)
     end
@@ -161,7 +156,7 @@ RegisterNetEvent('cancel')
   AddEventHandler('cancel', function()
     SetTextScale(0.5, 0.5)
     --SetTextFontForCurrentCommand(1)
-    local msg = "Tu as pas de cash !!!"
+    local msg = "You do not have enough money."
     local str = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", msg, Citizen.ResultAsLong())
 
     Citizen.InvokeNative(0xFA233F8FE190514C, str)
@@ -172,7 +167,7 @@ RegisterNetEvent('enter:clothe')
   AddEventHandler('enter:clothe', function()
     SetTextScale(0.5, 0.5)
     --SetTextFontForCurrentCommand(1)
-    local msg = "Touche Entrée pour ouvrir le Menu"
+    local msg = "Press [ENTER] to access the tailor."
     local str = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", msg, Citizen.ResultAsLong())
 
     Citizen.InvokeNative(0xFA233F8FE190514C, str)
@@ -185,7 +180,7 @@ RegisterNetEvent('loadtenue')
 AddEventHandler('loadtenue', function(kek) 
 
     SetPedOutfitPreset(PlayerPedId(), kek) 
-    ---TriggerServerEvent("redemrp_skin:createSkin", kek) -- save on db work
+    TriggerServerEvent("redemrp_skin:createSkin", kek) -- save on db work
 end)
 ------ key fonction
 
