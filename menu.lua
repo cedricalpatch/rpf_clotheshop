@@ -151,6 +151,10 @@ Citizen.CreateThread(function()
 end)
 
 -- callback or?
+RegisterCommand("loadcloath2", function(source, args)
+ TriggerServerEvent("rpf_clotheshop:loadClothes", function(cb)
+end)
+end)
 
 RegisterNetEvent('cancel')
   AddEventHandler('cancel', function()
@@ -175,13 +179,13 @@ RegisterNetEvent('enter:clothe')
   end)
 
 -- save clothe
+RegisterNetEvent('rpf_clotheshop:load_outfit')
+  AddEventHandler('rpf_clotheshop:load_outfit', function(outfit)
+  local _outfit = tonumber(outfit)
+  print(_outfit)
+   SetPedOutfitPreset(PlayerPedId(), _outfit)  
+  end)
 
-RegisterNetEvent('loadtenue')
-AddEventHandler('loadtenue', function(kek) 
-
-    SetPedOutfitPreset(PlayerPedId(), kek) 
-    TriggerServerEvent("redemrp_skin:createSkin", kek) -- save on db work
-end)
 ------ key fonction
 
 function whenKeyJustPressed(key)
@@ -195,7 +199,7 @@ end
 ---- spawn npc
 
 function lePlayerModel(name)
-    local model = GetHashKey(name)
+    local model = GetHashKey("mp_male")
     local player = PlayerId()
     
     if not IsModelValid(model) then return end
