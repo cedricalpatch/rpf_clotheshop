@@ -1,7 +1,5 @@
 # REDM CLOTHE SHOP FOR REDEMRP 1.0 WIP
 
-![logo_fivem|666x150](upload://cUvfPqKFeZh3f5Q4hHnBzdqIAp0.png) 
-
 **REDM CLOTHE SHOP FOR REDEMRP 1.0 WIP**
 
 *I made this menu to allow you to buy your outfits and change characters or create with* [REDEMRP_SKIN](https://github.com/RedEM-RP/redemrp_skin). 
@@ -28,8 +26,6 @@ Todo :
 -- added personnal menu
 
 > update db save /loadcloath2 for spawn your Clothe for now WIP
-
-[Last update](https://github.com/cedricalpatch/rpf_clotheshop)
 
 ![0_20191215145202_1|666x500](upload://16igt1HKt2zRAPbsbu0Yf5099J0.png) 
 ![0_20191213142917_1|666x500](upload://22OQcaoBni5AA6OqztHS2c6bFwO.png)
