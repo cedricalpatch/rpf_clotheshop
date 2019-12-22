@@ -1,31 +1,36 @@
 # REDM CLOTHE SHOP FOR REDEMRP 1.0 WIP
 
-I made this menu to allow you to buy your outfits and change characters or create with [REDEMRP](https://github.com/RedEM-RP/redemrp_skin). 
+![logo_fivem|666x150](upload://cUvfPqKFeZh3f5Q4hHnBzdqIAp0.png) 
+
+**REDM CLOTHE SHOP FOR REDEMRP 1.0 WIP**
+
+*I made this menu to allow you to buy your outfits and change characters or create with* [REDEMRP_SKIN](https://github.com/RedEM-RP/redemrp_skin). 
 
 1 - You can buy them on the city of Valentine in the shop, an icon is placed on the map .
 
 2 - You can create your character online or have another character from the games which can also be modified in this same store.
 
-3 - resource function with [REDEM_ROLEPLAY](https://github.com/RedEM-RP/redem_roleplay) whom you withdraw the money when you buy an outfit
+3 - *resource function with* [REDEM_ROLEPLAY](https://github.com/RedEM-RP/redem_roleplay) *whom you withdraw the money when you buy an outfit.*
 
 But this script can work withou...
 
-More info and Im Frensh if you dont speack English
+More info and support post here. Im Frensh if you dont speack English 
 
-The tra
+Notify and menu include.
 
 Todo :
 
--- translation is in progress
--- Save in skin db the clothe
--- add female mp 
--- multiple magisin 
--- added all blip
+-- translation is in progress ✔️ok
+-- Save in skin db the clothe ✔️ok
+-- add female mp ✔️ok
+-- multiple magasin ✔️ok
+-- added all blip ✔️ok
+-- added personnal menu
 
-carte - map :
+> update db save /loadcloath2 for spawn your Clothe for now WIP
 
-https://forum.fivem.net/uploads/default/original/4X/b/2/a/b2a7bc7c08f9540254cb8786574a148b2f90ed75.jpeg
+[Last update](https://github.com/cedricalpatch/rpf_clotheshop)
 
-menu :
-
-https://forum.fivem.net/uploads/default/original/4X/0/e/5/0e55f46d22133e19a27b6abd397e1fac3c4ca19e.png
+![0_20191215145202_1|666x500](upload://16igt1HKt2zRAPbsbu0Yf5099J0.png) 
+![0_20191213142917_1|666x500](upload://22OQcaoBni5AA6OqztHS2c6bFwO.png)
+![0_20191215163328_1|666x500](upload://pusmvvCwgksQIkpoGCrgz4m7jbn.jpeg)
