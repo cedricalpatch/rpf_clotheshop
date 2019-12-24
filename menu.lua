@@ -20,7 +20,7 @@ Citizen.CreateThread(function()
     WarMenu.CreateMenu('tenu', "Tailor")
     WarMenu.SetSubTitle('tenu', 'Purchase an Outfit')
     WarMenu.CreateSubMenu('tail', 'tenu', 'Complete Outfits')
-    WarMenu.CreateSubMenu('tail2', 'tenu', 'Creation Menu')
+    WarMenu.CreateSubMenu('tail2', 'tenu', 'Modif your Model')
      WarMenu.CreateSubMenu('tail3', 'tenu', 'Reset Character Model')
 
 
@@ -33,19 +33,19 @@ Citizen.CreateThread(function()
 
         if WarMenu.IsMenuOpened('tenu') then
 
-            if WarMenu.MenuButton('Reset Character Model', 'tail3') then 
+            if WarMenu.MenuButton('Complete Clothe', 'tail') then
             end
 
-            if WarMenu.MenuButton('Creation Menuu', 'tail2') then 
+            if WarMenu.MenuButton('New Character Model', 'tail3') then 
             end
 
-            if WarMenu.MenuButton('Complete Outfits', 'tail') then
+            if WarMenu.MenuButton('Modif Outfit', 'tail2') then 
             end
 
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened('tail') then
-            if WarMenu.Button('Cowboy with Beard 1 $') then
-                TriggerServerEvent("buy:clothe", 1, 30) 
+            if WarMenu.Button('Cowboy with Beard 0 $') then
+                TriggerServerEvent("buy:clothe", 0, 30) 
             elseif WarMenu.Button('Crazy Armour 2 $') then
                 TriggerServerEvent("buy:clothe", 2, 1) 
             elseif WarMenu.Button('Farmer 1.5 $') then
@@ -115,21 +115,161 @@ Citizen.CreateThread(function()
             elseif WarMenu.Button('Cowboy blond 3 $') then
                 TriggerServerEvent("buy:clothe", 4, 36) 
             elseif WarMenu.Button('Cowboy Bordeau 4 $') then
-                TriggerServerEvent("buy:clothe", 4, 35) 
+                TriggerServerEvent("buy:clothe", 4, 37) 
+            elseif WarMenu.Button('Crazy Armour 2 $') then
+                TriggerServerEvent("buy:clothe", 2, 38) 
+            elseif WarMenu.Button('Farmer 1.5 $') then
+                TriggerServerEvent("buy:clothe", 1.5, 39) 
+            elseif WarMenu.Button('Cowboy in Leather (Mexican) 1.4 $') then
+                TriggerServerEvent("buy:clothe", 1.4, 40) 
+            elseif WarMenu.Button('Cowboy in Leather (USA) 0.5 $') then
+                TriggerServerEvent("buy:clothe", 0.5, 41) 
+            elseif WarMenu.Button('Cowboy with Scarf 0.5 $') then
+                TriggerServerEvent("buy:clothe", 0.5, 42) 
+            elseif WarMenu.Button('Cowboy with a cape 1 $') then
+                TriggerServerEvent("buy:clothe", 1, 23) 
+            elseif WarMenu.Button('Explorer 0.2 $') then
+                TriggerServerEvent("buy:clothe", 0.2, 44) 
+            elseif WarMenu.Button('Explorer with Vest 0.4 $') then
+                TriggerServerEvent("buy:clothe", 0.4, 45) 
+            elseif WarMenu.Button('Hunter 0.1') then
+                TriggerServerEvent("buy:clothe", 0.1, 46) 
+            elseif WarMenu.Button('Hunter with Beard 3 $') then
+                TriggerServerEvent("buy:clothe", 3, 47) 
+            elseif WarMenu.Button('Indian 0 $') then
+                TriggerServerEvent("buy:clothe", 0, 48) 
+            elseif WarMenu.Button('Indian with Fringe $') then
+                TriggerServerEvent("buy:clothe", 0.6, 49) 
+            elseif WarMenu.Button('Poacher 2 $') then
+                TriggerServerEvent("buy:clothe", 2, 50) 
+            elseif WarMenu.Button('Rich Poacher 15 $') then
+                TriggerServerEvent("buy:clothe", 5, 51) 
+            elseif WarMenu.Button('Cowboy - Blonde 7 $') then
+                TriggerServerEvent("buy:clothe", 7, 52) 
+            elseif WarMenu.Button('Cowboy - Common 0.6 $') then
+                TriggerServerEvent("buy:clothe", 0.6, 53) 
+            elseif WarMenu.Button('Cowboy - Common 2 1 $') then
+                TriggerServerEvent("buy:clothe", 1, 54) 
+            elseif WarMenu.Button('Bard Coat 3$') then
+                TriggerServerEvent("buy:clothe", 3, 55) 
+            elseif WarMenu.Button('Mustache and Coat 2 $') then
+                TriggerServerEvent("buy:clothe", 2, 56) 
+            elseif WarMenu.Button('Cowboy - Poor 0 $') then
+                TriggerServerEvent("buy:clothe", 0, 57) 
+            elseif WarMenu.Button('Suit 3.2 $') then
+                TriggerServerEvent("buy:clothe", 3.2, 58) 
+            elseif WarMenu.Button('Bolero 3 $') then
+                TriggerServerEvent("buy:clothe", 3, 59) 
+            elseif WarMenu.Button('Cowboy - Uncommon 4 $') then
+                TriggerServerEvent("buy:clothe", 4, 60) 
+            elseif WarMenu.Button('Cowboy with Chaps 3.2 $') then
+                TriggerServerEvent("buy:clothe", 3.2, 61) 
+            elseif WarMenu.Button('Cowboy - Common 3 3 $') then
+                TriggerServerEvent("buy:clothe", 3, 62) 
+            elseif WarMenu.Button('Cowboy Bordeau 4 $') then
+                TriggerServerEvent("buy:clothe", 4, 63) 
+            elseif WarMenu.Button('Manteau barde 3$') then
+                TriggerServerEvent("buy:clothe", 3, 64) 
+            elseif WarMenu.Button('Manteau moustache 2 $') then
+                TriggerServerEvent("buy:clothe", 2, 65) 
+            elseif WarMenu.Button('Cowboy pauvre 0 $') then
+                TriggerServerEvent("buy:clothe", 0, 66) 
+            elseif WarMenu.Button('Costume veste 3.2 $') then
+                TriggerServerEvent("buy:clothe", 3.2, 67) 
+            elseif WarMenu.Button('Bolero 3 $') then
+                TriggerServerEvent("buy:clothe", 3, 68) 
+            elseif WarMenu.Button('Cowboy Nice 4 $') then
+                TriggerServerEvent("buy:clothe", 4, 69) 
+            elseif WarMenu.Button('Cowboy Chaps 3.2 $') then
+                TriggerServerEvent("buy:clothe", 3.2, 70) 
+            elseif WarMenu.Button('Cowboy blond 3 $') then
+                TriggerServerEvent("buy:clothe", 4, 71) 
+            elseif WarMenu.Button('Cowboy Bordeau 4 $') then
+                TriggerServerEvent("buy:clothe", 4, 72) 
+            elseif WarMenu.Button('Crazy Armour 2 $') then
+                TriggerServerEvent("buy:clothe", 2, 73) 
+            elseif WarMenu.Button('Farmer 1.5 $') then
+                TriggerServerEvent("buy:clothe", 1.5, 74) 
+            elseif WarMenu.Button('Cowboy in Leather (Mexican) 1.4 $') then
+                TriggerServerEvent("buy:clothe", 1.4, 75) 
+            elseif WarMenu.Button('Cowboy in Leather (USA) 0.5 $') then
+                TriggerServerEvent("buy:clothe", 0.5, 76) 
+            elseif WarMenu.Button('Cowboy with Scarf 0.5 $') then
+                TriggerServerEvent("buy:clothe", 0.5, 77) 
+            elseif WarMenu.Button('Cowboy with a cape 1 $') then
+                TriggerServerEvent("buy:clothe", 1, 78) 
+            elseif WarMenu.Button('Explorer 0.2 $') then
+                TriggerServerEvent("buy:clothe", 0.2, 79) 
+            elseif WarMenu.Button('Explorer with Vest 0.4 $') then
+                TriggerServerEvent("buy:clothe", 0.4, 80) 
+            elseif WarMenu.Button('Hunter 0.1') then
+                TriggerServerEvent("buy:clothe", 0.1, 81) 
+            elseif WarMenu.Button('Hunter with Beard 3 $') then
+                TriggerServerEvent("buy:clothe", 3, 82) 
+            elseif WarMenu.Button('Indian 0 $') then
+                TriggerServerEvent("buy:clothe", 0, 83) 
+            elseif WarMenu.Button('Indian with Fringe $') then
+                TriggerServerEvent("buy:clothe", 0.6, 84) 
+            elseif WarMenu.Button('Poacher 2 $') then
+                TriggerServerEvent("buy:clothe", 2, 85) 
+            elseif WarMenu.Button('Rich Poacher 15 $') then
+                TriggerServerEvent("buy:clothe", 5, 86) 
+            elseif WarMenu.Button('Cowboy - Blonde 7 $') then
+                TriggerServerEvent("buy:clothe", 7, 87) 
+            elseif WarMenu.Button('Cowboy - Common 0.6 $') then
+                TriggerServerEvent("buy:clothe", 0.6, 88) 
+            elseif WarMenu.Button('Cowboy - Common 2 1 $') then
+                TriggerServerEvent("buy:clothe", 1, 89) 
+            elseif WarMenu.Button('Bard Coat 3$') then
+                TriggerServerEvent("buy:clothe", 3, 90) 
+            elseif WarMenu.Button('Mustache and Coat 2 $') then
+                TriggerServerEvent("buy:clothe", 2, 91) 
+            elseif WarMenu.Button('Cowboy - Poor 0 $') then
+                TriggerServerEvent("buy:clothe", 0, 92) 
+            elseif WarMenu.Button('Suit 3.2 $') then
+                TriggerServerEvent("buy:clothe", 3.2, 93) 
+            elseif WarMenu.Button('Bolero 3 $') then
+                TriggerServerEvent("buy:clothe", 3, 94) 
+            elseif WarMenu.Button('Cowboy - Uncommon 4 $') then
+                TriggerServerEvent("buy:clothe", 4, 95) 
+            elseif WarMenu.Button('Cowboy with Chaps 3.2 $') then
+                TriggerServerEvent("buy:clothe", 3.2, 96) 
+            elseif WarMenu.Button('Cowboy - Common 3 3 $') then
+                TriggerServerEvent("buy:clothe", 3, 97) 
+            elseif WarMenu.Button('Cowboy Bordeau 4 $') then
+                TriggerServerEvent("buy:clothe", 4, 98) 
+            elseif WarMenu.Button('Manteau barde 3$') then
+                TriggerServerEvent("buy:clothe", 3, 99) 
+            elseif WarMenu.Button('Manteau moustache 2 $') then
+                TriggerServerEvent("buy:clothe", 2, 100) 
+            elseif WarMenu.Button('Cowboy pauvre 0 $') then
+                TriggerServerEvent("buy:clothe", 0, 101) 
+            elseif WarMenu.Button('Costume veste 3.2 $') then
+                TriggerServerEvent("buy:clothe", 3.2, 102) 
+            elseif WarMenu.Button('Bolero 3 $') then
+                TriggerServerEvent("buy:clothe", 3, 103) 
+            elseif WarMenu.Button('Cowboy Nice 4 $') then
+                TriggerServerEvent("buy:clothe", 4, 104) 
+            elseif WarMenu.Button('Cowboy Chaps 3.2 $') then
+                TriggerServerEvent("buy:clothe", 3.2, 105) 
+            elseif WarMenu.Button('Cowboy blond 3 $') then
+                TriggerServerEvent("buy:clothe", 4, 106) 
+            elseif WarMenu.Button('Cowboy Bordeau 4 $') then
+                TriggerServerEvent("buy:clothe", 4, 107) 
             end
 
             WarMenu.Display()
 
         elseif WarMenu.IsMenuOpened('tail2') then   
-            if WarMenu.Button('Creation Menu') then
-               TriggerEvent('redemrp_skin:openCreator')
+            if WarMenu.Button('Modif your Model') then
+               TriggerServerEvent("redemrp_clothing:loadClothes", 2)
             end
 
             WarMenu.Display()
 
         elseif WarMenu.IsMenuOpened('tail3') then   
             if WarMenu.Button('Peso online') then
-               SetPlayerModel(ped, `mp_male`, true)
+               TriggerEvent('redemrp_skin:openCreator')
             end
 
             WarMenu.Display()
@@ -141,7 +281,8 @@ Citizen.CreateThread(function()
                end
             --WarMenu.OpenMenu('tenu')
             WarMenu.Display()
-        elseif (Vdist(coords.x, coords.y, coords.z, 1225.60, -1293.85, 76.90) < 1.0) then --added new shop
+        elseif (Vdist(coords.x, coords.y, coords.z, -329.24, 775.37, 120.65) < 1.0) then --added new shop
+                TriggerEvent("enter:server")
                 if whenKeyJustPressed(keys["ENTER"]) then
                 WarMenu.OpenMenu('tenu')
                end
@@ -178,12 +319,23 @@ RegisterNetEvent('enter:clothe')
     Citizen.InvokeNative(0xE9990552DEC71600)
   end)
 
+RegisterNetEvent('enter:server')
+  AddEventHandler('enter:server', function()
+    SetTextScale(0.5, 0.5)
+    --SetTextFontForCurrentCommand(1)
+    local msg = "Welcome in our server. Your Personel Menu (L) and press (Enter) for change Outfit or complet skin..."
+    local str = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", msg, Citizen.ResultAsLong())
+
+    Citizen.InvokeNative(0xFA233F8FE190514C, str)
+    Citizen.InvokeNative(0xE9990552DEC71600)
+  end)
+
 -- save clothe
 RegisterNetEvent('rpf_clotheshop:load_outfit')
   AddEventHandler('rpf_clotheshop:load_outfit', function(outfit)
   local _outfit = tonumber(outfit)
   print(_outfit)
-   SetPedOutfitPreset(PlayerPedId(), _outfit)  
+   SetPedOutfitPreset(PlayerPedId(), _outfit)
   end)
 
 ------ key fonction
