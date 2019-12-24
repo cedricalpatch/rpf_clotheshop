@@ -28,7 +28,6 @@ Citizen.CreateThread(function()
 
         local ped = GetPlayerPed(-1)
         local coords = GetEntityCoords(PlayerPedId())
-        local model = GetHashKey("mp_male")
         local player = PlayerId()
 
         if WarMenu.IsMenuOpened('tenu') then
@@ -345,43 +344,5 @@ function whenKeyJustPressed(key)
         return true
     else
         return false
-    end
-end
-
----- spawn npc
-
-function lePlayerModel(name)
-    local model = GetHashKey("mp_male")
-    local player = PlayerId()
-    
-    if not IsModelValid(model) then return end
-    PerformRequest(model)
-    
-    if HasModelLoaded(model) then
-        Citizen.InvokeNative(0xED40380076A31506, player, model, false)
-        Citizen.InvokeNative(0x283978A15512B2FE, PlayerPedId(), true)
-        SetModelAsNoLongerNeeded(model)
-    end
-end
-
-local function PerformRequest(hash)
-    print("requesting model " .. hash)
-
-    RequestModel(hash, 0) -- RequestModel
-
-    local times = 1
-
-    print("requested " .. times .. " times")
-
-    while not Citizen.InvokeNative(0x1283B8B89DD5D1B6, hash) do -- HasModelLoaded
-        Citizen.InvokeNative(0xFA28FE3A6246FC30, hash, 0) -- RequestModel
-
-        times = times + 1
-
-        print("requested " .. times .. " times")
-
-        Citizen.Wait(0)
-        
-        if times >= 100 then break end
     end
 end
